@@ -3,13 +3,24 @@ entries:
   gotfhub:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-12-20T22:28:43.20235313Z"
+    created: "2024-12-20T22:41:10.152397515Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: e1a5cb394f967101394c19c5d29a16dcf2300207994d4f8543a3a3eb03968a60
     name: gotfhub
     type: application
     urls:
-    - gotfhub-1.0.0.tgz
+    - charts/gotfhub-1.0.0.tgz
     version: 1.0.0
-generated: "2024-12-20T22:28:43.201770906Z"
+  - apiVersion: v2
+    appVersion: 0.0.5
+    created: "2024-12-20T22:41:10.151931477Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: 5e2437318401f0a58655d4116d3378afe141f12d64b806b40af747a97a976260
+    name: gotfhub
+    type: application
+    urls:
+    - gotfhub-0.0.5.tgz
+    version: 0.0.5
+generated: "2024-12-20T22:41:10.151378668Z"
