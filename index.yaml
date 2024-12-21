@@ -2,25 +2,80 @@ apiVersion: v1
 entries:
   gotfhub:
   - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2024-12-20T22:41:10.152397515Z"
+    appVersion: 0.0.14
+    created: "2024-12-21T00:02:56.511213066Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
-    digest: e1a5cb394f967101394c19c5d29a16dcf2300207994d4f8543a3a3eb03968a60
+    digest: 8e04d5c9204775970d1dc59fe88b0b3104419c9865e7b5c51794e44ec4d15ac4
     name: gotfhub
     type: application
     urls:
-    - charts/gotfhub-1.0.0.tgz
-    version: 1.0.0
+    - https://charts.planesailing.io/charts/gotfhub-0.0.14.tgz
+    version: 0.0.14
   - apiVersion: v2
-    appVersion: 0.0.5
-    created: "2024-12-20T22:41:10.151931477Z"
+    appVersion: 0.0.13
+    created: "2024-12-21T00:02:56.510739808Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
-    digest: 5e2437318401f0a58655d4116d3378afe141f12d64b806b40af747a97a976260
+    digest: 5ff4171e4ed42c045b35bdbb7aed21738b66b72d33dfedd5aa004b4354b4d971
     name: gotfhub
     type: application
     urls:
-    - gotfhub-0.0.5.tgz
-    version: 0.0.5
-generated: "2024-12-20T22:41:10.151378668Z"
+    - https://charts.planesailing.io/charts/gotfhub-0.0.13.tgz
+    version: 0.0.13
+  - apiVersion: v2
+    appVersion: 0.0.12
+    created: "2024-12-21T00:02:56.510318985Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: f668a8ef2fc1ea0a54d506f9fd32964e926db869850ddd416ffad4c2dd2a4e4d
+    name: gotfhub
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/gotfhub-0.0.12.tgz
+    version: 0.0.12
+  - apiVersion: v2
+    appVersion: 0.0.11
+    created: "2024-12-21T00:02:56.509876272Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: 8d0caa1a15b97935a0acdee7b8b106a2433dfac6b518405bfd5dfe4615a1a692
+    name: gotfhub
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/gotfhub-0.0.11.tgz
+    version: 0.0.11
+  - apiVersion: v2
+    appVersion: 0.0.10
+    created: "2024-12-21T00:02:56.509406927Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: 4c14004cd1a093979d1d9856b74ccda64e4971e591fa6753c8ccd9c70f96f8a6
+    name: gotfhub
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/gotfhub-0.0.10.tgz
+    version: 0.0.10
+  - apiVersion: v2
+    appVersion: 0.0.7
+    created: "2024-12-21T00:02:56.512101232Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: c45e4a624e31965d6087e6d95d1d0d79704dc46ebca57714f231cbcc315e1d65
+    name: gotfhub
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/gotfhub-0.0.7.tgz
+    version: 0.0.7
+  - apiVersion: v2
+    appVersion: 0.0.6
+    created: "2024-12-21T00:02:56.511657448Z"
+    description: A Helm chart to deploy your very own offline Terraform Registry that
+      supports both modules and providers
+    digest: e4068b4c22840406c120f2f409d9fa080f5d6bde265e98f92030052bfd223aa4
+    name: gotfhub
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/gotfhub-0.0.6.tgz
+    version: 0.0.6
+generated: "2024-12-21T00:02:56.508876085Z"
