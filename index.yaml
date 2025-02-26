@@ -3,7 +3,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2025-02-26T15:10:33.265024Z"
+    created: "2025-02-26T17:46:45.256849Z"
     description: A Helm chart for Docker Registry
     digest: 1dd05abfbde9c26de71f4074ec44b26f3008479c2b1714079739c4efef12fc37
     home: https://hub.docker.com/_/registry/
@@ -21,7 +21,7 @@ entries:
   gotfhub:
   - apiVersion: v2
     appVersion: 1.21.0
-    created: "2025-02-26T15:10:33.273401Z"
+    created: "2025-02-26T17:46:45.271399Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c8ad0c7f9b233e8bde8262d6dfb11939f8012e80437796f6c2b320b1d9da5461
@@ -32,7 +32,7 @@ entries:
     version: 1.21.0
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2025-02-26T15:10:33.272866Z"
+    created: "2025-02-26T17:46:45.270572Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c5bf3cb995c0f4328b0241321056810e3a65e3fb3e7739dc301046f45409bdb4
@@ -43,7 +43,7 @@ entries:
     version: 1.20.0
   - apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-02-26T15:10:33.272297Z"
+    created: "2025-02-26T17:46:45.2695Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 9d058e2f06b0d21498e3526670e74a7cba3d08c1d1d11ed3c276831a4241a544
@@ -54,7 +54,7 @@ entries:
     version: 1.19.0
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2025-02-26T15:10:33.27175Z"
+    created: "2025-02-26T17:46:45.268361Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: cd7b6a7f920f63d2d063d6829dad1db17a7c92e283107bd4c114bacc036c1932
@@ -65,7 +65,7 @@ entries:
     version: 1.18.0
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2025-02-26T15:10:33.270588Z"
+    created: "2025-02-26T17:46:45.267546Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: eb3ff32c56804d7c85ad7c0f7e9003aefe68811d11c397e7eee8f57c38aa79ed
@@ -76,7 +76,7 @@ entries:
     version: 1.17.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2025-02-26T15:10:33.270049Z"
+    created: "2025-02-26T17:46:45.266415Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c4993ca6d2ef3dcce5fd3e4b14335f319a26cad6c570bb42fdb3f2514b176e1f
@@ -87,7 +87,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2025-02-26T15:10:33.268424Z"
+    created: "2025-02-26T17:46:45.262818Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f13a5811b2fa5cc3442545a8d31507af6f35f35bbc6e1df47ccd40cef217da47
@@ -98,7 +98,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2025-02-26T15:10:33.267875Z"
+    created: "2025-02-26T17:46:45.261691Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8e04d5c9204775970d1dc59fe88b0b3104419c9865e7b5c51794e44ec4d15ac4
@@ -109,7 +109,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2025-02-26T15:10:33.267317Z"
+    created: "2025-02-26T17:46:45.260887Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 5ff4171e4ed42c045b35bdbb7aed21738b66b72d33dfedd5aa004b4354b4d971
@@ -120,7 +120,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2025-02-26T15:10:33.26675Z"
+    created: "2025-02-26T17:46:45.260069Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f668a8ef2fc1ea0a54d506f9fd32964e926db869850ddd416ffad4c2dd2a4e4d
@@ -131,7 +131,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2025-02-26T15:10:33.2662Z"
+    created: "2025-02-26T17:46:45.259036Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8d0caa1a15b97935a0acdee7b8b106a2433dfac6b518405bfd5dfe4615a1a692
@@ -142,7 +142,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-02-26T15:10:33.265639Z"
+    created: "2025-02-26T17:46:45.257958Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 4c14004cd1a093979d1d9856b74ccda64e4971e591fa6753c8ccd9c70f96f8a6
@@ -153,7 +153,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-02-26T15:10:33.269508Z"
+    created: "2025-02-26T17:46:45.265526Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c45e4a624e31965d6087e6d95d1d0d79704dc46ebca57714f231cbcc315e1d65
@@ -164,7 +164,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-02-26T15:10:33.268961Z"
+    created: "2025-02-26T17:46:45.264532Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: e4068b4c22840406c120f2f409d9fa080f5d6bde265e98f92030052bfd223aa4
@@ -176,12 +176,49 @@ entries:
   operator-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-02-26T15:10:33.603264Z"
+    created: "2025-02-26T17:46:45.63492Z"
     description: A Helm chart for Kubernetes
-    digest: f71f3564a9fb7ab7fa77b51bcfbf5121547c0751e0865d5b582590304bb23ce5
+    digest: f32a1b98fb8f7c82c1bb970a0450725bbdd3b9530f630dc6c7de0f20d29b2eaf
     name: operator-pack
     type: application
     urls:
     - https://charts.planesailing.io/charts/operator-pack-57.tgz
     version: "57"
-generated: "2025-02-26T15:10:33.263839Z"
+  vsphere-csi:
+  - apiVersion: v2
+    appVersion: 3.3.1
+    created: "2025-02-26T17:46:45.643379Z"
+    dependencies:
+    - condition: snapshot.controller.enabled
+      name: snapshot-controller
+      repository: https://piraeus.io/helm-charts/
+      version: 3.0.6
+    - condition: vsphere-cpi.enabled
+      name: vsphere-cpi
+      repository: https://vsphere-tmm.github.io/helm-charts
+      version: 1.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for vSphere CSI Driver
+    digest: 245921a976aa54b2a619e053fdb6a093d772dae678994b08fea239493a33429e
+    home: https://github.com/kubernetes-sigs/vsphere-csi-driver
+    icon: https://raw.githubusercontent.com/kubernetes-sigs/vsphere-csi-driver/master/docs/images/vmware_logo.png
+    keywords:
+    - vsphere
+    - vmware
+    - csi
+    maintainers:
+    - email: maximilian.rink@telekom.de
+      name: Maximilian Rink
+    - email: myles@vmware.com
+      name: Myles Gray
+    name: vsphere-csi
+    sources:
+    - https://github.com/kubernetes-sigs/vsphere-csi-driver
+    urls:
+    - https://charts.planesailing.io/charts/vsphere-csi-3.7.3.tgz
+    version: 3.7.3
+generated: "2025-02-26T17:46:45.255032Z"
