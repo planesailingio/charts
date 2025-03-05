@@ -1,9 +1,70 @@
 apiVersion: v1
 entries:
+  cert-manager:
+  - annotations:
+      artifacthub.io/category: security
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/signKey: |
+        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
+        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
+    apiVersion: v2
+    appVersion: v1.17.1
+    created: "2025-03-05T12:06:54.540583Z"
+    description: A Helm chart for cert-manager
+    digest: 48707f6e8937290da96065dc7de8b4f5a95d9707798d4b5a0d560f78c12996f7
+    home: https://cert-manager.io
+    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
+    keywords:
+    - cert-manager
+    - kube-lego
+    - letsencrypt
+    - tls
+    kubeVersion: '>= 1.22.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: cert-manager
+    sources:
+    - https://github.com/cert-manager/cert-manager
+    urls:
+    - https://charts.planesailing.io/charts/cert-manager-v1.17.1.tgz
+    version: v1.17.1
+  cloudnative-pg:
+  - apiVersion: v2
+    appVersion: 1.25.0
+    created: "2025-03-05T12:06:54.54979Z"
+    dependencies:
+    - alias: monitoring
+      condition: monitoring.grafanaDashboard.create
+      name: cluster
+      repository: https://cloudnative-pg.github.io/grafana-dashboards
+      version: "0.0"
+    description: CloudNativePG Operator Helm Chart
+    digest: 9db75eb5002e0e71f13fa958cfd8edb0f33449990b2852962dd64ebf948d61e2
+    home: https://cloudnative-pg.io
+    icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
+    keywords:
+    - operator
+    - controller
+    - postgresql
+    - postgres
+    - database
+    maintainers:
+    - email: p.scorsolini@gmail.com
+      name: phisco
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/cloudnative-pg-0.23.1.tgz
+    version: 0.23.1
   docker-registry:
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2025-03-05T11:59:32.455797Z"
+    created: "2025-03-05T12:06:54.552049Z"
     description: A Helm chart for Docker Registry
     digest: 1dd05abfbde9c26de71f4074ec44b26f3008479c2b1714079739c4efef12fc37
     home: https://hub.docker.com/_/registry/
@@ -18,10 +79,42 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/docker-registry-2.2.3.tgz
     version: 2.2.3
+  fluent-operator:
+  - apiVersion: v2
+    appVersion: 3.2.0
+    created: "2025-03-05T12:06:54.570406Z"
+    dependencies:
+    - condition: fluentbit.crdsEnable
+      name: fluent-bit-crds
+      repository: file://charts/fluent-bit-crds
+      version: 3.2.0
+    - condition: fluentd.crdsEnable
+      name: fluentd-crds
+      repository: file://charts/fluentd-crds
+      version: 3.2.0
+    description: Fluent Operator provides great flexibility in building a logging
+      layer based on Fluent Bit and Fluentd.
+    digest: e955922dedf3f8fbe57cf1e53245326760521a725401271d75199f520ba9fb73
+    home: https://www.fluentd.org/
+    icon: https://raw.githubusercontent.com/fluent/fluent-operator/master/docs/images/fluent-operator-icon.svg
+    keywords:
+    - logging
+    - fluent-bit
+    - fluentd
+    - operator
+    maintainers:
+    - email: dehaocheng@kubesphere.io
+      name: wenchajun
+    name: fluent-operator
+    sources:
+    - https://github.com/fluent/fluent-operator
+    urls:
+    - https://charts.planesailing.io/charts/fluent-operator-3.2.0.tgz
+    version: 3.2.0
   gotfhub:
   - apiVersion: v2
     appVersion: 1.21.0
-    created: "2025-03-05T11:59:32.471258Z"
+    created: "2025-03-05T12:06:54.583385Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c8ad0c7f9b233e8bde8262d6dfb11939f8012e80437796f6c2b320b1d9da5461
@@ -32,7 +125,7 @@ entries:
     version: 1.21.0
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2025-03-05T11:59:32.470387Z"
+    created: "2025-03-05T12:06:54.58258Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c5bf3cb995c0f4328b0241321056810e3a65e3fb3e7739dc301046f45409bdb4
@@ -43,7 +136,7 @@ entries:
     version: 1.20.0
   - apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-03-05T11:59:32.469302Z"
+    created: "2025-03-05T12:06:54.581582Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 9d058e2f06b0d21498e3526670e74a7cba3d08c1d1d11ed3c276831a4241a544
@@ -54,7 +147,7 @@ entries:
     version: 1.19.0
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2025-03-05T11:59:32.468152Z"
+    created: "2025-03-05T12:06:54.580516Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: cd7b6a7f920f63d2d063d6829dad1db17a7c92e283107bd4c114bacc036c1932
@@ -65,7 +158,7 @@ entries:
     version: 1.18.0
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2025-03-05T11:59:32.467352Z"
+    created: "2025-03-05T12:06:54.579677Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: eb3ff32c56804d7c85ad7c0f7e9003aefe68811d11c397e7eee8f57c38aa79ed
@@ -76,7 +169,7 @@ entries:
     version: 1.17.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2025-03-05T11:59:32.466282Z"
+    created: "2025-03-05T12:06:54.578629Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c4993ca6d2ef3dcce5fd3e4b14335f319a26cad6c570bb42fdb3f2514b176e1f
@@ -87,7 +180,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2025-03-05T11:59:32.462446Z"
+    created: "2025-03-05T12:06:54.576294Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f13a5811b2fa5cc3442545a8d31507af6f35f35bbc6e1df47ccd40cef217da47
@@ -98,7 +191,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2025-03-05T11:59:32.461232Z"
+    created: "2025-03-05T12:06:54.575254Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8e04d5c9204775970d1dc59fe88b0b3104419c9865e7b5c51794e44ec4d15ac4
@@ -109,7 +202,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2025-03-05T11:59:32.460343Z"
+    created: "2025-03-05T12:06:54.574461Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 5ff4171e4ed42c045b35bdbb7aed21738b66b72d33dfedd5aa004b4354b4d971
@@ -120,7 +213,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2025-03-05T11:59:32.459481Z"
+    created: "2025-03-05T12:06:54.573669Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f668a8ef2fc1ea0a54d506f9fd32964e926db869850ddd416ffad4c2dd2a4e4d
@@ -131,7 +224,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2025-03-05T11:59:32.458378Z"
+    created: "2025-03-05T12:06:54.57262Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8d0caa1a15b97935a0acdee7b8b106a2433dfac6b518405bfd5dfe4615a1a692
@@ -142,7 +235,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-03-05T11:59:32.457061Z"
+    created: "2025-03-05T12:06:54.571569Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 4c14004cd1a093979d1d9856b74ccda64e4971e591fa6753c8ccd9c70f96f8a6
@@ -153,7 +246,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-03-05T11:59:32.465446Z"
+    created: "2025-03-05T12:06:54.57782Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c45e4a624e31965d6087e6d95d1d0d79704dc46ebca57714f231cbcc315e1d65
@@ -164,7 +257,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-03-05T11:59:32.464224Z"
+    created: "2025-03-05T12:06:54.577029Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: e4068b4c22840406c120f2f409d9fa080f5d6bde265e98f92030052bfd223aa4
@@ -173,12 +266,215 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/gotfhub-0.0.6.tgz
     version: 0.0.6
+  ingress-nginx:
+  - annotations:
+      artifacthub.io/changes: |
+        - 'CI: Fix chart testing. (#12258)'
+        - Update Ingress-Nginx version controller-v1.12.0
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.12.0
+    created: "2025-03-05T12:06:54.587061Z"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: 6445180ad70a12ed91d1430c7b54ed0cc65be6adfc534d23d5cb01c79734cff9
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.21.0-0'
+    maintainers:
+    - name: cpanato
+    - name: Gacko
+    - name: strongjz
+    - name: tao12345666333
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://charts.planesailing.io/charts/ingress-nginx-4.12.0.tgz
+    version: 4.12.0
+  kube-prometheus-stack:
+  - annotations:
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/prometheus-community/helm-charts
+        - name: Upstream Project
+          url: https://github.com/prometheus-operator/kube-prometheus
+        - name: Upgrade Process
+          url: https://github.com/prometheus-community/helm-charts/blob/main/charts/kube-prometheus-stack/README.md#upgrading-chart
+      artifacthub.io/operator: "true"
+    apiVersion: v2
+    appVersion: v0.80.1
+    created: "2025-03-05T12:06:54.620656Z"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.0.0
+    - condition: kubeStateMetrics.enabled
+      name: kube-state-metrics
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.30.*
+    - condition: nodeExporter.enabled
+      name: prometheus-node-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 4.44.*
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: 8.10.*
+    - condition: windowsMonitoring.enabled
+      name: prometheus-windows-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 0.9.*
+    description: kube-prometheus-stack collects Kubernetes manifests, Grafana dashboards,
+      and Prometheus rules combined with documentation and scripts to provide easy
+      to operate end-to-end Kubernetes cluster monitoring with Prometheus using the
+      Prometheus Operator.
+    digest: 90a59fff5aa7a029fd146603b398f986dbc9a8a17a7060801f6f8c9b845641b4
+    home: https://github.com/prometheus-operator/kube-prometheus
+    icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
+    keywords:
+    - operator
+    - prometheus
+    - kube-prometheus
+    kubeVersion: '>=1.19.0-0'
+    maintainers:
+    - email: andrew@quadcorps.co.uk
+      name: andrewgkew
+      url: https://github.com/andrewgkew
+    - email: gianrubio@gmail.com
+      name: gianrubio
+      url: https://github.com/gianrubio
+    - email: github.gkarthiks@gmail.com
+      name: gkarthiks
+      url: https://github.com/gkarthiks
+    - email: kube-prometheus-stack@sisti.pt
+      name: GMartinez-Sisti
+      url: https://github.com/GMartinez-Sisti
+    - email: github@jkroepke.de
+      name: jkroepke
+      url: https://github.com/jkroepke
+    - email: scott@r6by.com
+      name: scottrigby
+      url: https://github.com/scottrigby
+    - email: miroslav.hadzhiev@gmail.com
+      name: Xtigyro
+      url: https://github.com/Xtigyro
+    - email: quentin.bisson@gmail.com
+      name: QuentinBisson
+      url: https://github.com/QuentinBisson
+    name: kube-prometheus-stack
+    sources:
+    - https://github.com/prometheus-community/helm-charts
+    - https://github.com/prometheus-operator/kube-prometheus
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/kube-prometheus-stack-69.7.2.tgz
+    version: 69.7.2
+  metallb:
+  - apiVersion: v2
+    appVersion: v0.14.9
+    created: "2025-03-05T12:06:54.62318Z"
+    dependencies:
+    - condition: crds.enabled
+      name: crds
+      repository: ""
+      version: 0.14.9
+    - condition: frrk8s.enabled
+      name: frr-k8s
+      repository: https://metallb.github.io/frr-k8s
+      version: 0.0.16
+    description: A network load-balancer implementation for Kubernetes using standard
+      routing protocols
+    digest: e808428c9047d0c218634bc0f7cc92b8545d4c207470b3b563cfcbb46ab31ae9
+    home: https://metallb.universe.tf
+    icon: https://metallb.universe.tf/images/logo/metallb-white.png
+    kubeVersion: '>= 1.19.0-0'
+    name: metallb
+    sources:
+    - https://github.com/metallb/metallb
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/metallb-0.14.9.tgz
+    version: 0.14.9
+  metrics-server:
+  - annotations:
+      category: Analytics
+      images: |
+        - name: metrics-server
+          image: docker.io/bitnami/metrics-server:0.7.2-debian-12-r16
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 0.7.2
+    created: "2025-03-05T12:06:54.625218Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Metrics Server aggregates resource usage data, such as container
+      CPU and memory usage, in a Kubernetes cluster and makes it available via the
+      Metrics API.
+    digest: be4b577830bae422234db92e0719ea51bb52ccec737a047e5dc105fc3b0a459f
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/metrics-server/img/metrics-server-stack-220x234.png
+    keywords:
+    - metrics-server
+    - cluster
+    - metrics
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: metrics-server
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/metrics-server
+    urls:
+    - https://charts.planesailing.io/charts/metrics-server-7.4.0.tgz
+    version: 7.4.0
+  opensearch-operator:
+  - apiVersion: v2
+    appVersion: 2.7.0
+    created: "2025-03-05T12:06:54.626861Z"
+    description: The OpenSearch Operator Helm chart for Kubernetes
+    digest: 00b3ef4d3d1f3d6bdacc9353731faad6d5034ea146274deacb172bd9ddb8f94c
+    name: opensearch-operator
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/opensearch-operator-2.7.0.tgz
+    version: 2.7.0
+  operator:
+  - apiVersion: v2
+    appVersion: v7.0.0
+    created: "2025-03-05T12:06:54.627795Z"
+    description: A Helm chart for MinIO Operator
+    digest: 28582dd4f3fb040211472cb248b31d9aebd000b444f2f266a3da1bf8c529dcf5
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - storage
+    - object-storage
+    - S3
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: operator
+    sources:
+    - https://github.com/minio/operator
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/operator-7.0.0.tgz
+    version: 7.0.0
   operator-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-05T11:59:33.750354Z"
+    created: "2025-03-05T12:06:55.802637Z"
     description: A Helm chart for Kubernetes
-    digest: 1e219e791162a4415cf7097b3ecf4fcfd1ebeef17bd31bb9c1b1248a250143e8
+    digest: ae1a6f7c81a67e21ff28bafe278fa22b08533ba4ad1de8dec51b35cf8d1b039f
     name: operator-pack
     type: application
     urls:
@@ -186,7 +482,7 @@ entries:
     version: "90"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-05T11:59:33.419804Z"
+    created: "2025-03-05T12:06:55.560439Z"
     description: A Helm chart for Kubernetes
     digest: 7eb85a3529d04f55e6f738eaa70ed598c0f736007985339b05e64aed8f0cbe33
     name: operator-pack
@@ -196,7 +492,7 @@ entries:
     version: "84"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-05T11:59:33.16625Z"
+    created: "2025-03-05T12:06:55.307421Z"
     description: A Helm chart for Kubernetes
     digest: 557b0aed7efc8f7b216219a90e9a1a85b29e8dc064f86d07b8f4db71dce9560c
     name: operator-pack
@@ -206,7 +502,7 @@ entries:
     version: "61"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-05T11:59:32.831533Z"
+    created: "2025-03-05T12:06:54.969633Z"
     description: A Helm chart for Kubernetes
     digest: f32a1b98fb8f7c82c1bb970a0450725bbdd3b9530f630dc6c7de0f20d29b2eaf
     name: operator-pack
@@ -214,10 +510,167 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/operator-pack-57.tgz
     version: "57"
+  rabbitmq-cluster-operator:
+  - annotations:
+      category: Infrastructure
+      images: |
+        - name: rabbitmq
+          image: docker.io/bitnami/rabbitmq:4.0.6-debian-12-r0
+        - name: rabbitmq-cluster-operator
+          image: docker.io/bitnami/rabbitmq-cluster-operator:2.12.1-debian-12-r3
+        - name: rmq-default-credential-updater
+          image: docker.io/bitnami/rmq-default-credential-updater:1.0.5-debian-12-r4
+        - name: rmq-messaging-topology-operator
+          image: docker.io/bitnami/rmq-messaging-topology-operator:1.16.0-debian-12-r1
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 2.12.1
+    created: "2025-03-05T12:06:55.807072Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: The RabbitMQ Cluster Kubernetes Operator automates provisioning,
+      management, and operations of RabbitMQ clusters running on Kubernetes.
+    digest: ce96db13f680079b615402c04916afc61ab17421c1e7ed6dc9dc0aa8606740e4
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/rabbitmq-cluster-operator/img/rabbitmq-cluster-operator-stack-220x234.png
+    keywords:
+    - rabbitmq
+    - operator
+    - infrastructure
+    - message queue
+    - AMQP
+    kubeVersion: '>= 1.19.0-0'
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: rabbitmq-cluster-operator
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/rabbitmq-cluster-operator
+    urls:
+    - https://charts.planesailing.io/charts/rabbitmq-cluster-operator-4.4.5.tgz
+    version: 4.4.5
+  redis-operator:
+  - apiVersion: v2
+    appVersion: 0.19.1
+    created: "2025-03-05T12:06:55.814928Z"
+    description: Provides easy redis setup definitions for Kubernetes services, and
+      deployment.
+    digest: 68f4ab0aff797a07fed71431157ac83c3ab6d2e01f6d4619aca6da2a79f13e48
+    home: https://github.com/OT-CONTAINER-KIT/redis-operator
+    icon: https://github.com/OT-CONTAINER-KIT/redis-operator/raw/master/static/redis-operator-logo.svg
+    keywords:
+    - operator
+    - redis
+    - opstree
+    - kubernetes
+    - openshift
+    maintainers:
+    - name: iamabhishek-dubey
+    - name: sandy724
+    - name: shubham-cmyk
+    name: redis-operator
+    sources:
+    - https://github.com/OT-CONTAINER-KIT/redis-operator
+    urls:
+    - https://charts.planesailing.io/charts/redis-operator-0.19.3.tgz
+    version: 0.19.3
+  sealed-secrets:
+  - annotations:
+      category: DeveloperTools
+    apiVersion: v2
+    appVersion: 0.28.0
+    created: "2025-03-05T12:06:55.816323Z"
+    description: Helm chart for the sealed-secrets controller.
+    digest: 7ee780f51dc0363d9d554b69492d61a3cf347cd70b85622332b6d67d675ce257
+    home: https://github.com/bitnami-labs/sealed-secrets
+    icon: https://bitnami.com/assets/stacks/sealed-secrets/img/sealed-secrets-stack-220x234.png
+    keywords:
+    - secrets
+    - sealed-secrets
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami-labs/sealed-secrets
+    name: sealed-secrets
+    sources:
+    - https://github.com/bitnami-labs/sealed-secrets
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/sealed-secrets-2.17.1.tgz
+    version: 2.17.1
+  strimzi-kafka-operator:
+  - apiVersion: v2
+    appVersion: 0.45.0
+    created: "2025-03-05T12:06:55.820995Z"
+    description: 'Strimzi: Apache Kafka running on Kubernetes'
+    digest: 1e406e60b0dc2e66555f6c1080c07ae047efbffef6a06f169c46139dd02e0bc7
+    home: https://strimzi.io/
+    icon: https://raw.githubusercontent.com/strimzi/strimzi-kafka-operator/main/documentation/logo/strimzi_logo.png
+    keywords:
+    - kafka
+    - queue
+    - stream
+    - event
+    - messaging
+    - datastore
+    - topic
+    maintainers:
+    - name: Frawless
+    - name: ppatierno
+    - name: samuel-hawker
+    - name: scholzj
+    - name: tombentley
+    - name: sknot-rh
+    - name: PaulRMellor
+    - name: im-konge
+    - name: see-quick
+    name: strimzi-kafka-operator
+    sources:
+    - https://github.com/strimzi/strimzi-kafka-operator
+    urls:
+    - https://charts.planesailing.io/charts/strimzi-kafka-operator-helm-3-chart-0.45.0.tgz
+    version: 0.45.0
+  trust-manager:
+  - annotations:
+      artifacthub.io/category: security
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/prerelease: "false"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager
+    apiVersion: v2
+    appVersion: v0.16.0
+    created: "2025-03-05T12:06:55.822226Z"
+    description: trust-manager is the easiest way to manage TLS trust bundles in Kubernetes
+      and OpenShift clusters
+    digest: 44dc4d6c9afc9c6e46797d3ddbbd5fdd20a8052ed185a19336263bff9fbff0b3
+    home: https://cert-manager.io/docs/trust/trust-manager
+    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
+    keywords:
+    - trust-manager
+    - cert-manager
+    - tls
+    - trust bundle
+    - trust anchor
+    kubeVersion: '>= 1.25.0-0'
+    maintainers:
+    - email: cert-manager-maintainers@googlegroups.com
+      name: cert-manager-maintainers
+      url: https://cert-manager.io
+    name: trust-manager
+    sources:
+    - https://github.com/cert-manager/trust-manager
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/trust-manager-v0.16.0.tgz
+    version: v0.16.0
   vsphere-csi:
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-03-05T11:59:33.760037Z"
+    created: "2025-03-05T12:06:55.831072Z"
     dependencies:
     - condition: snapshot.controller.enabled
       name: snapshot-controller
@@ -251,4 +704,4 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/vsphere-csi-3.7.3.tgz
     version: 3.7.3
-generated: "2025-03-05T11:59:32.452838Z"
+generated: "2025-03-05T12:06:54.532546Z"
