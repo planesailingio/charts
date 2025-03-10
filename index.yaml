@@ -10,7 +10,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.17.1
-    created: "2025-03-10T16:01:22.939041Z"
+    created: "2025-03-10T16:43:44.736943Z"
     description: A Helm chart for cert-manager
     digest: 48707f6e8937290da96065dc7de8b4f5a95d9707798d4b5a0d560f78c12996f7
     home: https://cert-manager.io
@@ -34,7 +34,7 @@ entries:
   cloudnative-pg:
   - apiVersion: v2
     appVersion: 1.25.1
-    created: "2025-03-10T16:01:22.955368Z"
+    created: "2025-03-10T16:43:44.753815Z"
     dependencies:
     - alias: monitoring
       condition: monitoring.grafanaDashboard.create
@@ -63,7 +63,7 @@ entries:
     version: 0.23.2
   - apiVersion: v2
     appVersion: 1.25.0
-    created: "2025-03-10T16:01:22.948659Z"
+    created: "2025-03-10T16:43:44.747057Z"
     dependencies:
     - alias: monitoring
       condition: monitoring.grafanaDashboard.create
@@ -97,7 +97,7 @@ entries:
           description: align imagePullSecrets in Deployment and ServiceAccount
     apiVersion: v2
     appVersion: 1.12.0
-    created: "2025-03-10T16:01:22.958358Z"
+    created: "2025-03-10T16:43:44.7576Z"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
       DNS Services
     digest: 8e5d31ab6d9387d07aec21f087487f0136b8c5aa26f9fd5edc9e8795c68a3ca6
@@ -122,7 +122,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2025-03-10T16:01:22.960559Z"
+    created: "2025-03-10T16:43:44.760709Z"
     description: A Helm chart for Docker Registry
     digest: 1dd05abfbde9c26de71f4074ec44b26f3008479c2b1714079739c4efef12fc37
     home: https://hub.docker.com/_/registry/
@@ -148,7 +148,7 @@ entries:
           description: "Fixed regression where `affinity.nodeAffinity` was being ignored."
     apiVersion: v2
     appVersion: 0.15.1
-    created: "2025-03-10T16:01:22.961735Z"
+    created: "2025-03-10T16:43:44.762023Z"
     description: ExternalDNS synchronizes exposed Kubernetes Services and Ingresses
       with DNS providers.
     digest: 4022b2b19f9e14ec871db795b7e5c4c6b4ef22e08cd779e8b50c0d73fef04c6e
@@ -174,7 +174,7 @@ entries:
   fluent-operator:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2025-03-10T16:01:22.97879Z"
+    created: "2025-03-10T16:43:44.778551Z"
     dependencies:
     - condition: fluentbit.crdsEnable
       name: fluent-bit-crds
@@ -206,7 +206,7 @@ entries:
   gitlab:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:22.980459Z"
+    created: "2025-03-10T16:43:44.779964Z"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 191a3d709d93a370c6e03d288ce34d69bdc3fac9f0e82dd3182e52e13ef05332
     name: gitlab
@@ -217,9 +217,9 @@ entries:
   gitlab-bespoke-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:22.981061Z"
+    created: "2025-03-10T16:43:44.780566Z"
     description: A Gitlab deployment coupled to the operator-pack
-    digest: f98f5523cc878d85e1b78cb6ac849f65ec755e305502212ad6adcc4a3fefd334
+    digest: 3318ca96bab01c81064584165c191992eb66c59a8f263e9059a996ae4bf0fb2c
     name: gitlab-bespoke-pack
     type: application
     urls:
@@ -228,7 +228,7 @@ entries:
   gotfhub:
   - apiVersion: v2
     appVersion: 1.21.0
-    created: "2025-03-10T16:01:22.998976Z"
+    created: "2025-03-10T16:43:44.795935Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c8ad0c7f9b233e8bde8262d6dfb11939f8012e80437796f6c2b320b1d9da5461
@@ -239,7 +239,7 @@ entries:
     version: 1.21.0
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2025-03-10T16:01:22.997911Z"
+    created: "2025-03-10T16:43:44.795035Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c5bf3cb995c0f4328b0241321056810e3a65e3fb3e7739dc301046f45409bdb4
@@ -250,7 +250,7 @@ entries:
     version: 1.20.0
   - apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-03-10T16:01:22.996404Z"
+    created: "2025-03-10T16:43:44.79389Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 9d058e2f06b0d21498e3526670e74a7cba3d08c1d1d11ed3c276831a4241a544
@@ -261,7 +261,7 @@ entries:
     version: 1.19.0
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2025-03-10T16:01:22.994704Z"
+    created: "2025-03-10T16:43:44.792808Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: cd7b6a7f920f63d2d063d6829dad1db17a7c92e283107bd4c114bacc036c1932
@@ -272,7 +272,7 @@ entries:
     version: 1.18.0
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2025-03-10T16:01:22.993636Z"
+    created: "2025-03-10T16:43:44.791531Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: eb3ff32c56804d7c85ad7c0f7e9003aefe68811d11c397e7eee8f57c38aa79ed
@@ -283,7 +283,7 @@ entries:
     version: 1.17.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2025-03-10T16:01:22.991895Z"
+    created: "2025-03-10T16:43:44.790266Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c4993ca6d2ef3dcce5fd3e4b14335f319a26cad6c570bb42fdb3f2514b176e1f
@@ -294,7 +294,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2025-03-10T16:01:22.988953Z"
+    created: "2025-03-10T16:43:44.787635Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f13a5811b2fa5cc3442545a8d31507af6f35f35bbc6e1df47ccd40cef217da47
@@ -305,7 +305,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2025-03-10T16:01:22.987636Z"
+    created: "2025-03-10T16:43:44.786245Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8e04d5c9204775970d1dc59fe88b0b3104419c9865e7b5c51794e44ec4d15ac4
@@ -316,7 +316,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2025-03-10T16:01:22.986729Z"
+    created: "2025-03-10T16:43:44.785203Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 5ff4171e4ed42c045b35bdbb7aed21738b66b72d33dfedd5aa004b4354b4d971
@@ -327,7 +327,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2025-03-10T16:01:22.985592Z"
+    created: "2025-03-10T16:43:44.784346Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f668a8ef2fc1ea0a54d506f9fd32964e926db869850ddd416ffad4c2dd2a4e4d
@@ -338,7 +338,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2025-03-10T16:01:22.983818Z"
+    created: "2025-03-10T16:43:44.783182Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8d0caa1a15b97935a0acdee7b8b106a2433dfac6b518405bfd5dfe4615a1a692
@@ -349,7 +349,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-03-10T16:01:22.982199Z"
+    created: "2025-03-10T16:43:44.781869Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 4c14004cd1a093979d1d9856b74ccda64e4971e591fa6753c8ccd9c70f96f8a6
@@ -360,7 +360,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-03-10T16:01:22.990899Z"
+    created: "2025-03-10T16:43:44.789381Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c45e4a624e31965d6087e6d95d1d0d79704dc46ebca57714f231cbcc315e1d65
@@ -371,7 +371,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-03-10T16:01:22.989915Z"
+    created: "2025-03-10T16:43:44.788499Z"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: e4068b4c22840406c120f2f409d9fa080f5d6bde265e98f92030052bfd223aa4
@@ -388,7 +388,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.12.0
-    created: "2025-03-10T16:01:23.003299Z"
+    created: "2025-03-10T16:43:44.800821Z"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 6445180ad70a12ed91d1430c7b54ed0cc65be6adfc534d23d5cb01c79734cff9
@@ -422,7 +422,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-03-10T16:01:23.068894Z"
+    created: "2025-03-10T16:43:44.865629Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -501,7 +501,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-03-10T16:01:23.036631Z"
+    created: "2025-03-10T16:43:44.835917Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -580,7 +580,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.13.4
-    created: "2025-03-10T16:01:23.084363Z"
+    created: "2025-03-10T16:43:44.87855Z"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -621,7 +621,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.9
-    created: "2025-03-10T16:01:23.086374Z"
+    created: "2025-03-10T16:43:44.880557Z"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -653,7 +653,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.7.2
-    created: "2025-03-10T16:01:23.091575Z"
+    created: "2025-03-10T16:43:44.886258Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -687,7 +687,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.7.2
-    created: "2025-03-10T16:01:23.089773Z"
+    created: "2025-03-10T16:43:44.884039Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -716,7 +716,7 @@ entries:
   opensearch-operator:
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2025-03-10T16:01:23.093101Z"
+    created: "2025-03-10T16:43:44.887812Z"
     description: The OpenSearch Operator Helm chart for Kubernetes
     digest: 00b3ef4d3d1f3d6bdacc9353731faad6d5034ea146274deacb172bd9ddb8f94c
     name: opensearch-operator
@@ -727,7 +727,7 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: v7.0.0
-    created: "2025-03-10T16:01:23.093995Z"
+    created: "2025-03-10T16:43:44.888723Z"
     description: A Helm chart for MinIO Operator
     digest: 28582dd4f3fb040211472cb248b31d9aebd000b444f2f266a3da1bf8c529dcf5
     home: https://min.io
@@ -749,9 +749,9 @@ entries:
   operator-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:25.503021Z"
+    created: "2025-03-10T16:43:47.309887Z"
     description: A Helm chart for Kubernetes
-    digest: caf84817ef5af12ab459791aef8cd5434095d4b9b9314db8573451330f0bd40b
+    digest: b35eb609cf67dce3d20f8c10695ad8688d2286f1457170316a0ddce7a520ca6e
     name: operator-pack
     type: application
     urls:
@@ -759,7 +759,7 @@ entries:
     version: "115"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:25.291462Z"
+    created: "2025-03-10T16:43:47.105328Z"
     description: A Helm chart for Kubernetes
     digest: d0fe4735fc000103e5c06dbb72178be5d06490698f8fcf147a15e7cb8dbbb5e7
     name: operator-pack
@@ -769,7 +769,7 @@ entries:
     version: "114"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:25.08942Z"
+    created: "2025-03-10T16:43:46.890312Z"
     description: A Helm chart for Kubernetes
     digest: 83e3ae93a18f521ad0856e647cacbf1bb2a15cc2cee12cb7915dd817c30fc00a
     name: operator-pack
@@ -779,7 +779,7 @@ entries:
     version: "113"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:24.8699Z"
+    created: "2025-03-10T16:43:46.671364Z"
     description: A Helm chart for Kubernetes
     digest: 564bd3189b18b76dd794d214cc348343467e328a5d8d31b2517bb67abeff355d
     name: operator-pack
@@ -789,7 +789,7 @@ entries:
     version: "110"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:24.662567Z"
+    created: "2025-03-10T16:43:46.459299Z"
     description: A Helm chart for Kubernetes
     digest: c242ab2557fc826477d4c58e7c13bd739dd944d371579d70eaf5965a585506a4
     name: operator-pack
@@ -799,7 +799,7 @@ entries:
     version: "109"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:24.422986Z"
+    created: "2025-03-10T16:43:46.2404Z"
     description: A Helm chart for Kubernetes
     digest: 49f67f8f6318bb9d6f67426928b54c368d68af1c8f66bc1d23b659c07fadee84
     name: operator-pack
@@ -809,7 +809,7 @@ entries:
     version: "108"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:24.202008Z"
+    created: "2025-03-10T16:43:46.023594Z"
     description: A Helm chart for Kubernetes
     digest: 448476628c5778039ce4d7c9845967a0d89e3d4e6b1bab7af9beea74451b0fb6
     name: operator-pack
@@ -819,7 +819,7 @@ entries:
     version: "107"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:23.979978Z"
+    created: "2025-03-10T16:43:45.795793Z"
     description: A Helm chart for Kubernetes
     digest: 0cb8eef03d5e5b1c29ff55a6f565da3e0b48d448d1945ee35b9573251d252519
     name: operator-pack
@@ -829,7 +829,7 @@ entries:
     version: "106"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:23.764935Z"
+    created: "2025-03-10T16:43:45.56512Z"
     description: A Helm chart for Kubernetes
     digest: 4d2892aeef37aa4c99b450b4890c270bb663ae54c421dddfb5783bb19ce29f9f
     name: operator-pack
@@ -839,7 +839,7 @@ entries:
     version: "105"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:23.540957Z"
+    created: "2025-03-10T16:43:45.343874Z"
     description: A Helm chart for Kubernetes
     digest: bc4e40c0105b916a265792265e92acc9b51620fa5000116f989ff2b7aed51d9c
     name: operator-pack
@@ -849,7 +849,7 @@ entries:
     version: "102"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:23.319491Z"
+    created: "2025-03-10T16:43:45.121515Z"
     description: A Helm chart for Kubernetes
     digest: 497d12e639f9238e43005fc36ef21b58fe9eddd665244c0ae6b148046ea6b762
     name: operator-pack
@@ -859,7 +859,7 @@ entries:
     version: "100"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:27.448454Z"
+    created: "2025-03-10T16:43:49.187341Z"
     description: A Helm chart for Kubernetes
     digest: ae4ddcf002e46b8eb563435ee2b0788a623c0bc8e497cf67d2d039574f01ede1
     name: operator-pack
@@ -869,7 +869,7 @@ entries:
     version: "95"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:27.230227Z"
+    created: "2025-03-10T16:43:48.970184Z"
     description: A Helm chart for Kubernetes
     digest: 4bbdefcf7e0909f3e415768b8dd445ad5d55305ed308bcca4e6f84ddbe62d77a
     name: operator-pack
@@ -879,7 +879,7 @@ entries:
     version: "93"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:27.014838Z"
+    created: "2025-03-10T16:43:48.75141Z"
     description: A Helm chart for Kubernetes
     digest: 0bf435a14cae8a1908d4131fe89f6dea2a2eabdd35ad3fbc76f4308c4c4eb914
     name: operator-pack
@@ -889,7 +889,7 @@ entries:
     version: "92"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:26.795685Z"
+    created: "2025-03-10T16:43:48.520099Z"
     description: A Helm chart for Kubernetes
     digest: 31518b2f8567fad975dbaea561d13275fef12c7aba26839c5946c421a82bb369
     name: operator-pack
@@ -899,7 +899,7 @@ entries:
     version: "91"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:26.588755Z"
+    created: "2025-03-10T16:43:48.291695Z"
     description: A Helm chart for Kubernetes
     digest: ae1a6f7c81a67e21ff28bafe278fa22b08533ba4ad1de8dec51b35cf8d1b039f
     name: operator-pack
@@ -909,7 +909,7 @@ entries:
     version: "90"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:26.340493Z"
+    created: "2025-03-10T16:43:48.069845Z"
     description: A Helm chart for Kubernetes
     digest: 7eb85a3529d04f55e6f738eaa70ed598c0f736007985339b05e64aed8f0cbe33
     name: operator-pack
@@ -919,7 +919,7 @@ entries:
     version: "84"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:26.096562Z"
+    created: "2025-03-10T16:43:47.854389Z"
     description: A Helm chart for Kubernetes
     digest: 557b0aed7efc8f7b216219a90e9a1a85b29e8dc064f86d07b8f4db71dce9560c
     name: operator-pack
@@ -929,7 +929,7 @@ entries:
     version: "61"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-03-10T16:01:25.762063Z"
+    created: "2025-03-10T16:43:47.569032Z"
     description: A Helm chart for Kubernetes
     digest: f32a1b98fb8f7c82c1bb970a0450725bbdd3b9530f630dc6c7de0f20d29b2eaf
     name: operator-pack
@@ -952,7 +952,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2025-03-10T16:01:27.461885Z"
+    created: "2025-03-10T16:43:49.196654Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -994,7 +994,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2025-03-10T16:01:27.457132Z"
+    created: "2025-03-10T16:43:49.192655Z"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1025,7 +1025,7 @@ entries:
   redis-operator:
   - apiVersion: v2
     appVersion: 0.19.1
-    created: "2025-03-10T16:01:27.470248Z"
+    created: "2025-03-10T16:43:49.204153Z"
     description: Provides easy redis setup definitions for Kubernetes services, and
       deployment.
     digest: 68f4ab0aff797a07fed71431157ac83c3ab6d2e01f6d4619aca6da2a79f13e48
@@ -1052,7 +1052,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.28.0
-    created: "2025-03-10T16:01:27.471692Z"
+    created: "2025-03-10T16:43:49.205393Z"
     description: Helm chart for the sealed-secrets controller.
     digest: 7ee780f51dc0363d9d554b69492d61a3cf347cd70b85622332b6d67d675ce257
     home: https://github.com/bitnami-labs/sealed-secrets
@@ -1074,7 +1074,7 @@ entries:
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 0.45.0
-    created: "2025-03-10T16:01:27.476428Z"
+    created: "2025-03-10T16:43:49.21008Z"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: 1e406e60b0dc2e66555f6c1080c07ae047efbffef6a06f169c46139dd02e0bc7
     home: https://strimzi.io/
@@ -1106,9 +1106,9 @@ entries:
   tenant:
   - apiVersion: v2
     appVersion: v7.0.0
-    created: "2025-03-10T16:01:27.477219Z"
+    created: "2025-03-10T16:43:49.210799Z"
     description: A Helm chart for MinIO Operator
-    digest: b1cc0c90ffe7fe33eebbc025dfe2026f3c19cca4e139d61ec75592418f2b2945
+    digest: 822ee3ba31629ece82b0fbb523a869e28bd7a8e78ea7b6ecda7f150d580634a2
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -1134,7 +1134,7 @@ entries:
         - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager
     apiVersion: v2
     appVersion: v0.16.0
-    created: "2025-03-10T16:01:27.478219Z"
+    created: "2025-03-10T16:43:49.21173Z"
     description: trust-manager is the easiest way to manage TLS trust bundles in Kubernetes
       and OpenShift clusters
     digest: 44dc4d6c9afc9c6e46797d3ddbbd5fdd20a8052ed185a19336263bff9fbff0b3
@@ -1161,7 +1161,7 @@ entries:
   vsphere-csi:
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-03-10T16:01:27.485627Z"
+    created: "2025-03-10T16:43:49.219424Z"
     dependencies:
     - condition: snapshot.controller.enabled
       name: snapshot-controller
@@ -1195,4 +1195,4 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/vsphere-csi-3.7.3.tgz
     version: 3.7.3
-generated: "2025-03-10T16:01:22.930667Z"
+generated: "2025-03-10T16:43:44.729022Z"
