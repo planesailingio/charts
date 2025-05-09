@@ -1,0 +1,19 @@
+skopeo copy -a docker://nvcr.io/nvidia/cuda:12.8.1-base-ubi9 docker://docker.io/planesailingio/nvidia-cuda:12.8.1-base-ubi9
+skopeo copy -a docker://nvcr.io/nvidia/driver:570.124.06 docker://docker.io/planesailingio/nvidia-driver:570.124.06
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.8.0 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-driver-manager:v0.8.0
+skopeo copy -a docker://nvcr.io/nvidia/k8s/container-toolkit:v1.17.5-ubuntu20.04 docker://docker.io/planesailingio/nvidia-k8s-container-toolkit:v1.17.5-ubuntu20.04
+skopeo copy -a docker://nvcr.io/nvidia/k8s-device-plugin:v0.17.1 docker://docker.io/planesailingio/nvidia-k8s-device-plugin:v0.17.1
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/dcgm:4.1.1-2-ubuntu22.04 docker://docker.io/planesailingio/nvidia-cloud-native-dcgm:4.1.1-2-ubuntu22.04
+skopeo copy -a docker://nvcr.io/nvidia/k8s/dcgm-exporter:4.1.1-4.0.4-ubuntu22.04 docker://docker.io/planesailingio/nvidia-k8s-dcgm-exporter:4.1.1-4.0.4-ubuntu22.04
+skopeo copy -a docker://nvcr.io/nvidia/k8s-device-plugin:v0.17.1 docker://docker.io/planesailingio/nvidia-k8s-device-plugin:v0.17.1
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-mig-manager:v0.12.1-ubuntu20.04 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-mig-manager:v0.12.1-ubuntu20.04
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/nvidia-fs:2.20.5 docker://docker.io/planesailingio/nvidia-cloud-native-nvidia-fs:2.20.5
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/gdrdrv:v2.4.4 docker://docker.io/planesailingio/nvidia-cloud-native-gdrdrv:v2.4.4
+# skopeo copy -a docker:///vgpu-manager: docker://docker.io/planesailingio/
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.8.0 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-driver-manager:v0.8.0
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/vgpu-device-manager:v0.3.0 docker://docker.io/planesailingio/nvidia-cloud-native-vgpu-device-manager:v0.3.0
+skopeo copy -a docker://nvcr.io/nvidia/cuda:12.8.1-base-ubi9 docker://docker.io/planesailingio/nvidia-cuda:12.8.1-base-ubi9
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.8.0 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-driver-manager:v0.8.0
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-kata-manager:v0.2.3 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-kata-manager:v0.2.3
+skopeo copy -a docker://nvcr.io/nvidia/kubevirt-gpu-device-plugin:v1.3.1 docker://docker.io/planesailingio/nvidia-kubevirt-gpu-device-plugin:v1.3.1
+skopeo copy -a docker://nvcr.io/nvidia/cloud-native/k8s-cc-manager:v0.1.1 docker://docker.io/planesailingio/nvidia-cloud-native-k8s-cc-manager:v0.1.1
