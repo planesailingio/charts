@@ -10,7 +10,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.17.1
-    created: "2025-05-13T01:30:58.126944+01:00"
+    created: "2025-06-04T00:38:23.654084+01:00"
     description: A Helm chart for cert-manager
     digest: 48707f6e8937290da96065dc7de8b4f5a95d9707798d4b5a0d560f78c12996f7
     home: https://cert-manager.io
@@ -34,7 +34,7 @@ entries:
   cloudnative-pg:
   - apiVersion: v2
     appVersion: 1.25.1
-    created: "2025-05-13T01:30:58.150251+01:00"
+    created: "2025-06-04T00:38:23.670434+01:00"
     dependencies:
     - alias: monitoring
       condition: monitoring.grafanaDashboard.create
@@ -63,7 +63,7 @@ entries:
     version: 0.23.2
   - apiVersion: v2
     appVersion: 1.25.0
-    created: "2025-05-13T01:30:58.138553+01:00"
+    created: "2025-06-04T00:38:23.66303+01:00"
     dependencies:
     - alias: monitoring
       condition: monitoring.grafanaDashboard.create
@@ -97,7 +97,7 @@ entries:
           description: align imagePullSecrets in Deployment and ServiceAccount
     apiVersion: v2
     appVersion: 1.12.0
-    created: "2025-05-13T01:30:58.152826+01:00"
+    created: "2025-06-04T00:38:23.67251+01:00"
     description: CoreDNS is a DNS server that chains plugins and provides Kubernetes
       DNS Services
     digest: 8e5d31ab6d9387d07aec21f087487f0136b8c5aa26f9fd5edc9e8795c68a3ca6
@@ -122,7 +122,7 @@ entries:
   docker-registry:
   - apiVersion: v1
     appVersion: 2.8.1
-    created: "2025-05-13T01:30:58.154784+01:00"
+    created: "2025-06-04T00:38:23.673775+01:00"
     description: A Helm chart for Docker Registry
     digest: 1dd05abfbde9c26de71f4074ec44b26f3008479c2b1714079739c4efef12fc37
     home: https://hub.docker.com/_/registry/
@@ -148,7 +148,7 @@ entries:
           description: "Fixed regression where `affinity.nodeAffinity` was being ignored."
     apiVersion: v2
     appVersion: 0.15.1
-    created: "2025-05-13T01:30:58.156941+01:00"
+    created: "2025-06-04T00:38:23.675378+01:00"
     description: ExternalDNS synchronizes exposed Kubernetes Services and Ingresses
       with DNS providers.
     digest: 4022b2b19f9e14ec871db795b7e5c4c6b4ef22e08cd779e8b50c0d73fef04c6e
@@ -174,7 +174,7 @@ entries:
   fluent-operator:
   - apiVersion: v2
     appVersion: 3.2.0
-    created: "2025-05-13T01:30:58.182613+01:00"
+    created: "2025-06-04T00:38:23.692022+01:00"
     dependencies:
     - condition: fluentbit.crdsEnable
       name: fluent-bit-crds
@@ -206,7 +206,7 @@ entries:
   gitlab:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.184129+01:00"
+    created: "2025-06-04T00:38:23.693199+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 191a3d709d93a370c6e03d288ce34d69bdc3fac9f0e82dd3182e52e13ef05332
     name: gitlab
@@ -217,9 +217,9 @@ entries:
   gitlab-bespoke-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.198678+01:00"
+    created: "2025-06-04T00:38:23.701649+01:00"
     description: A Gitlab deployment coupled to the operator-pack
-    digest: 0e8e9eb38b5248d4cf6f0d6e39b958129134927afc4adbb0d8fa16d463b755a1
+    digest: 50d2c2c23d0f6bffcc1d9deb4d22ef8faccf9eafcb2520cd13a06b60d0ce367f
     name: gitlab-bespoke-pack
     type: application
     urls:
@@ -227,7 +227,7 @@ entries:
     version: "16"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.196702+01:00"
+    created: "2025-06-04T00:38:23.701063+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 44a2130888246571ee8c6bff3b6b0127846a403345e88306fd0f2f0e323eba55
     name: gitlab-bespoke-pack
@@ -237,7 +237,7 @@ entries:
     version: "15"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.194805+01:00"
+    created: "2025-06-04T00:38:23.699947+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 370eafd144346f2a44ffc4cb79f549e2029b005f543d4066931afea52a2ec8d1
     name: gitlab-bespoke-pack
@@ -247,7 +247,7 @@ entries:
     version: "14"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.1933+01:00"
+    created: "2025-06-04T00:38:23.698692+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 002a178b87e645b47cdd3cf6ae2e11345f90566c5dc5b5df290eac9ad296457f
     name: gitlab-bespoke-pack
@@ -257,7 +257,7 @@ entries:
     version: "13"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.191421+01:00"
+    created: "2025-06-04T00:38:23.697733+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 0b9f416a38096223e516bffc16486e986c55dbf985a72641b4d29d95f4be45a9
     name: gitlab-bespoke-pack
@@ -267,7 +267,7 @@ entries:
     version: "12"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.189467+01:00"
+    created: "2025-06-04T00:38:23.696668+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: b706c58a43f94d81e030e6767fcc76805a7ca248b1014463138d65a95d090914
     name: gitlab-bespoke-pack
@@ -277,7 +277,7 @@ entries:
     version: "11"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.187707+01:00"
+    created: "2025-06-04T00:38:23.695566+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: fa5b8dc9f407d98b275cdbf0b01627706374fb916f749f880f9bbbf3fb3a21f9
     name: gitlab-bespoke-pack
@@ -287,7 +287,7 @@ entries:
     version: "10"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.205602+01:00"
+    created: "2025-06-04T00:38:23.705945+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 56e37d798f8c042b72e9a4782f97e34e23dad0bce82a1f2a2c79e30c89b8eb06
     name: gitlab-bespoke-pack
@@ -297,7 +297,7 @@ entries:
     version: "9"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.203932+01:00"
+    created: "2025-06-04T00:38:23.704822+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: baf017ac65e5af7ce2bdd5412c1abdd7ff19544de9f9d688cb4600195b2210ad
     name: gitlab-bespoke-pack
@@ -307,7 +307,7 @@ entries:
     version: "4"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.202162+01:00"
+    created: "2025-06-04T00:38:23.703793+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 10b7ff063f067b8650c37b26d1cdf937f570849da2725008c6d50e0455d68b89
     name: gitlab-bespoke-pack
@@ -317,7 +317,7 @@ entries:
     version: "3"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.200547+01:00"
+    created: "2025-06-04T00:38:23.702682+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: c880253ee7ab5cad0e63a53e23634bd0505323f7e0a588cede4bd5b443dbd385
     name: gitlab-bespoke-pack
@@ -327,7 +327,7 @@ entries:
     version: "2"
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.185869+01:00"
+    created: "2025-06-04T00:38:23.694292+01:00"
     description: A Gitlab deployment coupled to the operator-pack
     digest: 07bbe4972b81a2ac0bdcdb26902df195590c2ceb1d7927c6c387e4d5f92f0a97
     name: gitlab-bespoke-pack
@@ -338,7 +338,7 @@ entries:
   gocodehub:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-13T01:30:58.206625+01:00"
+    created: "2025-06-04T00:38:23.7067+01:00"
     description: A Helm chart to deploy your very own Microsoft VSCode marketplace
       Gallery
     digest: e2ab8402675810ccf55d6a9e209666e3e623f538b982b3dbb3ab18a051c1288f
@@ -350,7 +350,7 @@ entries:
   gotfhub:
   - apiVersion: v2
     appVersion: 1.21.0
-    created: "2025-05-13T01:30:58.225801+01:00"
+    created: "2025-06-04T00:38:23.718929+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c8ad0c7f9b233e8bde8262d6dfb11939f8012e80437796f6c2b320b1d9da5461
@@ -361,7 +361,7 @@ entries:
     version: 1.21.0
   - apiVersion: v2
     appVersion: 1.20.0
-    created: "2025-05-13T01:30:58.224327+01:00"
+    created: "2025-06-04T00:38:23.718037+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c5bf3cb995c0f4328b0241321056810e3a65e3fb3e7739dc301046f45409bdb4
@@ -372,7 +372,7 @@ entries:
     version: 1.20.0
   - apiVersion: v2
     appVersion: 1.19.0
-    created: "2025-05-13T01:30:58.223126+01:00"
+    created: "2025-06-04T00:38:23.717285+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 9d058e2f06b0d21498e3526670e74a7cba3d08c1d1d11ed3c276831a4241a544
@@ -383,7 +383,7 @@ entries:
     version: 1.19.0
   - apiVersion: v2
     appVersion: 1.18.0
-    created: "2025-05-13T01:30:58.221643+01:00"
+    created: "2025-06-04T00:38:23.71624+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: cd7b6a7f920f63d2d063d6829dad1db17a7c92e283107bd4c114bacc036c1932
@@ -394,7 +394,7 @@ entries:
     version: 1.18.0
   - apiVersion: v2
     appVersion: 1.17.0
-    created: "2025-05-13T01:30:58.220222+01:00"
+    created: "2025-06-04T00:38:23.715358+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: eb3ff32c56804d7c85ad7c0f7e9003aefe68811d11c397e7eee8f57c38aa79ed
@@ -405,7 +405,7 @@ entries:
     version: 1.17.0
   - apiVersion: v2
     appVersion: 1.0.7
-    created: "2025-05-13T01:30:58.219086+01:00"
+    created: "2025-06-04T00:38:23.714621+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c4993ca6d2ef3dcce5fd3e4b14335f319a26cad6c570bb42fdb3f2514b176e1f
@@ -416,7 +416,7 @@ entries:
     version: 1.0.7
   - apiVersion: v2
     appVersion: 0.0.15
-    created: "2025-05-13T01:30:58.2149+01:00"
+    created: "2025-06-04T00:38:23.711862+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f13a5811b2fa5cc3442545a8d31507af6f35f35bbc6e1df47ccd40cef217da47
@@ -427,7 +427,7 @@ entries:
     version: 0.0.15
   - apiVersion: v2
     appVersion: 0.0.14
-    created: "2025-05-13T01:30:58.213483+01:00"
+    created: "2025-06-04T00:38:23.711062+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8e04d5c9204775970d1dc59fe88b0b3104419c9865e7b5c51794e44ec4d15ac4
@@ -438,7 +438,7 @@ entries:
     version: 0.0.14
   - apiVersion: v2
     appVersion: 0.0.13
-    created: "2025-05-13T01:30:58.212175+01:00"
+    created: "2025-06-04T00:38:23.710281+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 5ff4171e4ed42c045b35bdbb7aed21738b66b72d33dfedd5aa004b4354b4d971
@@ -449,7 +449,7 @@ entries:
     version: 0.0.13
   - apiVersion: v2
     appVersion: 0.0.12
-    created: "2025-05-13T01:30:58.210777+01:00"
+    created: "2025-06-04T00:38:23.709466+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: f668a8ef2fc1ea0a54d506f9fd32964e926db869850ddd416ffad4c2dd2a4e4d
@@ -460,7 +460,7 @@ entries:
     version: 0.0.12
   - apiVersion: v2
     appVersion: 0.0.11
-    created: "2025-05-13T01:30:58.209584+01:00"
+    created: "2025-06-04T00:38:23.708742+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 8d0caa1a15b97935a0acdee7b8b106a2433dfac6b518405bfd5dfe4615a1a692
@@ -471,7 +471,7 @@ entries:
     version: 0.0.11
   - apiVersion: v2
     appVersion: 0.0.10
-    created: "2025-05-13T01:30:58.20815+01:00"
+    created: "2025-06-04T00:38:23.707816+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: 4c14004cd1a093979d1d9856b74ccda64e4971e591fa6753c8ccd9c70f96f8a6
@@ -482,7 +482,7 @@ entries:
     version: 0.0.10
   - apiVersion: v2
     appVersion: 0.0.7
-    created: "2025-05-13T01:30:58.217898+01:00"
+    created: "2025-06-04T00:38:23.713941+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: c45e4a624e31965d6087e6d95d1d0d79704dc46ebca57714f231cbcc315e1d65
@@ -493,7 +493,7 @@ entries:
     version: 0.0.7
   - apiVersion: v2
     appVersion: 0.0.6
-    created: "2025-05-13T01:30:58.216399+01:00"
+    created: "2025-06-04T00:38:23.712771+01:00"
     description: A Helm chart to deploy your very own offline Terraform Registry that
       supports both modules and providers
     digest: e4068b4c22840406c120f2f409d9fa080f5d6bde265e98f92030052bfd223aa4
@@ -505,7 +505,7 @@ entries:
   gpu-operator:
   - apiVersion: v2
     appVersion: v25.3.0
-    created: "2025-05-13T01:30:58.232286+01:00"
+    created: "2025-06-04T00:38:23.723425+01:00"
     dependencies:
     - condition: nfd.enabled
       name: node-feature-discovery
@@ -538,7 +538,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: 1.12.0
-    created: "2025-05-13T01:30:58.238186+01:00"
+    created: "2025-06-04T00:38:23.727386+01:00"
     description: Ingress controller for Kubernetes using NGINX as a reverse proxy
       and load balancer
     digest: 6445180ad70a12ed91d1430c7b54ed0cc65be6adfc534d23d5cb01c79734cff9
@@ -572,7 +572,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-05-13T01:30:58.327263+01:00"
+    created: "2025-06-04T00:38:23.782133+01:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -651,7 +651,7 @@ entries:
       artifacthub.io/operator: "true"
     apiVersion: v2
     appVersion: v0.80.1
-    created: "2025-05-13T01:30:58.284725+01:00"
+    created: "2025-06-04T00:38:23.755741+01:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -730,7 +730,7 @@ entries:
       artifacthub.io/prerelease: "false"
     apiVersion: v2
     appVersion: v1.13.4
-    created: "2025-05-13T01:30:58.350404+01:00"
+    created: "2025-06-04T00:38:23.798499+01:00"
     dependencies:
     - condition: grafana.enabled
       name: grafana
@@ -771,7 +771,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.14.9
-    created: "2025-05-13T01:30:58.354294+01:00"
+    created: "2025-06-04T00:38:23.801404+01:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -803,7 +803,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.7.2
-    created: "2025-05-13T01:30:58.361487+01:00"
+    created: "2025-06-04T00:38:23.805672+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -837,7 +837,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 0.7.2
-    created: "2025-05-13T01:30:58.35843+01:00"
+    created: "2025-06-04T00:38:23.803445+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -866,7 +866,7 @@ entries:
   nvidia-device-plugin:
   - apiVersion: v2
     appVersion: 0.17.1
-    created: "2025-05-13T01:30:58.366854+01:00"
+    created: "2025-06-04T00:38:23.810643+01:00"
     dependencies:
     - alias: nfd
       condition: nfd.enabled,gfd.enabled
@@ -884,7 +884,7 @@ entries:
     version: 0.17.1
   - apiVersion: v2
     appVersion: 0.13.0
-    created: "2025-05-13T01:30:58.363637+01:00"
+    created: "2025-06-04T00:38:23.807552+01:00"
     dependencies:
     - alias: nfd
       condition: nfd.enabled,gfd.enabled
@@ -910,7 +910,7 @@ entries:
       licenses: MIT
     apiVersion: v2
     appVersion: 0.6.7
-    created: "2025-05-13T01:30:58.391773+01:00"
+    created: "2025-06-04T00:38:23.827243+01:00"
     dependencies:
     - condition: ollama.enabled
       import-values:
@@ -960,10 +960,22 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/open-webui-6.13.0.tgz
     version: 6.13.0
+  opensearch:
+  - apiVersion: v2
+    appVersion: 2.19.1
+    created: "2025-06-04T00:38:23.827839+01:00"
+    description: 'A Helm chart to deploy a secure Opensearch cluster Cert Manager
+      and the OpenSearch Operator. '
+    digest: 408be436cf72a5953f8cb7f48d2d93c922dbf98874c1b24cde6167d0c7d4b333
+    name: opensearch
+    type: application
+    urls:
+    - https://charts.planesailing.io/charts/opensearch-1.0.0.tgz
+    version: 1.0.0
   opensearch-operator:
   - apiVersion: v2
     appVersion: 2.7.0
-    created: "2025-05-13T01:30:58.394715+01:00"
+    created: "2025-06-04T00:38:23.830359+01:00"
     description: The OpenSearch Operator Helm chart for Kubernetes
     digest: 00b3ef4d3d1f3d6bdacc9353731faad6d5034ea146274deacb172bd9ddb8f94c
     name: opensearch-operator
@@ -974,7 +986,7 @@ entries:
   operator:
   - apiVersion: v2
     appVersion: v7.0.0
-    created: "2025-05-13T01:30:58.396477+01:00"
+    created: "2025-06-04T00:38:23.831455+01:00"
     description: A Helm chart for MinIO Operator
     digest: 28582dd4f3fb040211472cb248b31d9aebd000b444f2f266a3da1bf8c529dcf5
     home: https://min.io
@@ -996,204 +1008,14 @@ entries:
   operator-pack:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-13T01:31:02.644224+01:00"
+    created: "2025-06-04T00:38:23.869025+01:00"
     description: A Helm chart for Kubernetes
-    digest: 27d879972803a7563530770982842136042b6eb3495eb34bd117f47b5255acf8
+    digest: d6a1d4126def0291e88d93471d5364b48b5c31740f520aef773fe4a0b8134c26
     name: operator-pack
     type: application
     urls:
     - https://charts.planesailing.io/charts/operator-pack-116.tgz
     version: "116"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:02.275187+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 6a53ee945966ffee4e190dca62521e8918651a6a9f5e6988b8fbfcc2f7a439ff
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-115.tgz
-    version: "115"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:01.921639+01:00"
-    description: A Helm chart for Kubernetes
-    digest: d0fe4735fc000103e5c06dbb72178be5d06490698f8fcf147a15e7cb8dbbb5e7
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-114.tgz
-    version: "114"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:01.584294+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 83e3ae93a18f521ad0856e647cacbf1bb2a15cc2cee12cb7915dd817c30fc00a
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-113.tgz
-    version: "113"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:01.229968+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 564bd3189b18b76dd794d214cc348343467e328a5d8d31b2517bb67abeff355d
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-110.tgz
-    version: "110"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:00.89137+01:00"
-    description: A Helm chart for Kubernetes
-    digest: c242ab2557fc826477d4c58e7c13bd739dd944d371579d70eaf5965a585506a4
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-109.tgz
-    version: "109"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:00.538643+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 49f67f8f6318bb9d6f67426928b54c368d68af1c8f66bc1d23b659c07fadee84
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-108.tgz
-    version: "108"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:00.198144+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 448476628c5778039ce4d7c9845967a0d89e3d4e6b1bab7af9beea74451b0fb6
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-107.tgz
-    version: "107"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:30:59.844449+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 0cb8eef03d5e5b1c29ff55a6f565da3e0b48d448d1945ee35b9573251d252519
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-106.tgz
-    version: "106"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:30:59.500712+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 4d2892aeef37aa4c99b450b4890c270bb663ae54c421dddfb5783bb19ce29f9f
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-105.tgz
-    version: "105"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:30:59.149186+01:00"
-    description: A Helm chart for Kubernetes
-    digest: bc4e40c0105b916a265792265e92acc9b51620fa5000116f989ff2b7aed51d9c
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-102.tgz
-    version: "102"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:30:58.795021+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 497d12e639f9238e43005fc36ef21b58fe9eddd665244c0ae6b148046ea6b762
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-100.tgz
-    version: "100"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:05.74743+01:00"
-    description: A Helm chart for Kubernetes
-    digest: ae4ddcf002e46b8eb563435ee2b0788a623c0bc8e497cf67d2d039574f01ede1
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-95.tgz
-    version: "95"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:05.402582+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 4bbdefcf7e0909f3e415768b8dd445ad5d55305ed308bcca4e6f84ddbe62d77a
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-93.tgz
-    version: "93"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:05.033285+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 0bf435a14cae8a1908d4131fe89f6dea2a2eabdd35ad3fbc76f4308c4c4eb914
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-92.tgz
-    version: "92"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:04.661418+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 31518b2f8567fad975dbaea561d13275fef12c7aba26839c5946c421a82bb369
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-91.tgz
-    version: "91"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:04.299875+01:00"
-    description: A Helm chart for Kubernetes
-    digest: ae1a6f7c81a67e21ff28bafe278fa22b08533ba4ad1de8dec51b35cf8d1b039f
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-90.tgz
-    version: "90"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:03.938305+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 7eb85a3529d04f55e6f738eaa70ed598c0f736007985339b05e64aed8f0cbe33
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-84.tgz
-    version: "84"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:03.585602+01:00"
-    description: A Helm chart for Kubernetes
-    digest: 557b0aed7efc8f7b216219a90e9a1a85b29e8dc064f86d07b8f4db71dce9560c
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-61.tgz
-    version: "61"
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2025-05-13T01:31:03.076298+01:00"
-    description: A Helm chart for Kubernetes
-    digest: f32a1b98fb8f7c82c1bb970a0450725bbdd3b9530f630dc6c7de0f20d29b2eaf
-    name: operator-pack
-    type: application
-    urls:
-    - https://charts.planesailing.io/charts/operator-pack-57.tgz
-    version: "57"
   rabbitmq-cluster-operator:
   - annotations:
       category: Infrastructure
@@ -1209,7 +1031,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2025-05-13T01:31:05.761345+01:00"
+    created: "2025-06-04T00:38:23.89867+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1251,7 +1073,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 2.12.1
-    created: "2025-05-13T01:31:05.754504+01:00"
+    created: "2025-06-04T00:38:23.893759+01:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -1282,7 +1104,7 @@ entries:
   redis-operator:
   - apiVersion: v2
     appVersion: 0.19.1
-    created: "2025-05-13T01:31:05.774246+01:00"
+    created: "2025-06-04T00:38:23.907554+01:00"
     description: Provides easy redis setup definitions for Kubernetes services, and
       deployment.
     digest: 68f4ab0aff797a07fed71431157ac83c3ab6d2e01f6d4619aca6da2a79f13e48
@@ -1309,7 +1131,7 @@ entries:
       category: DeveloperTools
     apiVersion: v2
     appVersion: 0.28.0
-    created: "2025-05-13T01:31:05.777096+01:00"
+    created: "2025-06-04T00:38:23.909358+01:00"
     description: Helm chart for the sealed-secrets controller.
     digest: 7ee780f51dc0363d9d554b69492d61a3cf347cd70b85622332b6d67d675ce257
     home: https://github.com/bitnami-labs/sealed-secrets
@@ -1331,7 +1153,7 @@ entries:
   strimzi-kafka-operator:
   - apiVersion: v2
     appVersion: 0.45.0
-    created: "2025-05-13T01:31:05.785326+01:00"
+    created: "2025-06-04T00:38:23.914934+01:00"
     description: 'Strimzi: Apache Kafka running on Kubernetes'
     digest: 1e406e60b0dc2e66555f6c1080c07ae047efbffef6a06f169c46139dd02e0bc7
     home: https://strimzi.io/
@@ -1363,9 +1185,9 @@ entries:
   tenant:
   - apiVersion: v2
     appVersion: v7.0.0
-    created: "2025-05-13T01:31:05.787285+01:00"
+    created: "2025-06-04T00:38:23.915811+01:00"
     description: A Helm chart for MinIO Operator
-    digest: 8749980b0f97dc4cf66b7f1d7fe22bc602f8b5ea0b00651aa778cfe196c0bbcf
+    digest: 042339d80e1039abf0058b3de9f414ce414f34b595ffd1fc3b6510af4d01eb43
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -1391,7 +1213,7 @@ entries:
         - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager
     apiVersion: v2
     appVersion: v0.16.0
-    created: "2025-05-13T01:31:05.789613+01:00"
+    created: "2025-06-04T00:38:23.917372+01:00"
     description: trust-manager is the easiest way to manage TLS trust bundles in Kubernetes
       and OpenShift clusters
     digest: 44dc4d6c9afc9c6e46797d3ddbbd5fdd20a8052ed185a19336263bff9fbff0b3
@@ -1418,7 +1240,7 @@ entries:
   vsphere-csi:
   - apiVersion: v2
     appVersion: 3.3.1
-    created: "2025-05-13T01:31:05.801099+01:00"
+    created: "2025-06-04T00:38:23.925289+01:00"
     dependencies:
     - condition: snapshot.controller.enabled
       name: snapshot-controller
@@ -1452,4 +1274,4 @@ entries:
     urls:
     - https://charts.planesailing.io/charts/vsphere-csi-3.7.3.tgz
     version: 3.7.3
-generated: "2025-05-13T01:30:58.115241+01:00"
+generated: "2025-06-04T00:38:23.646332+01:00"
